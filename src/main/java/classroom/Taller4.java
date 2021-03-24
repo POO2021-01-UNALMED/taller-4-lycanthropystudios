@@ -5,6 +5,7 @@ public class Taller4 {
     public static void main(String[] args) {
         Persona[] estudiantes1 = new Persona[3];
         estudiantes1[0] = new Persona(188220);
+
         estudiantes1[1] = new Persona();
         estudiantes1[2] = new Persona(71212, "Maria");
         Persona profesor1 = new Persona("Juan", 988);
@@ -15,7 +16,9 @@ public class Taller4 {
         Asignatura asignatura2 = new Asignatura(882);
         asignatura2.setCodigoInterno(98);
         asignatura2.cambiarDatos("Estadistica");
-        Grupo grupo2 = new Grupo(2, profesor2, asignatura2, 10122, "W V 8-10");
+
+        Persona[] estudiantes2 = new Persona[2];
+        Grupo grupo2 = new Grupo(estudiantes2, profesor2, asignatura2, 10122, "W V 8-10");
         grupo2.cambiarEstudiante(0, estudiantes1[0]);
         grupo2.cambiarEstudiante(1, estudiantes1[2]);
         grupo2.cambiarEstudiante(estudiantes1[0], estudiantes1[1]);
